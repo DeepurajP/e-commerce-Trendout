@@ -11,36 +11,50 @@
 <body>
 
     <div class="header">
-    <div class="container">
-        <div class="navbar">
-            
-            <div class="logo">
-                
-                <img src="img/logo1.jfif" width="100px">
-                <h4><b>TRENDS OUT</b></h4>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/logo1.png" width="100px">
+                    <h4><b>TRENDS OUT</b></h4>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ProductPage.html">Products</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="ContactPage.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="img/sbag.png" width="30px" height="30px">
+                <img src="img/menu.png" class="menu-icon" 
+                onclick="menutoggle()">
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="ProductPage.html">Products</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="ContactPage.html">Contact</a></li>
-                    <li><a href="">Account</a></li>
-                </ul>
-            </nav>
-            <img src="img/sbag.png" width="30px" height="30px">
-        </div>
-
 <!----Contents---->
 
 <div class="small-container">
     <h2 class="title">About US</h2>
     <div>
-        <h2 class="h2head">Making commerce better for everyone</h2><br>
-        <h3>We help people achieve independence by making it easier to start, run, and grow a business. We believe the future of commerce has more voices, not fewer, so we're reducing the barriers to business ownership to make commerce better for everyone</h3>
+       
+        <div class="row">
+            <div class="col-2">
+                <h6>Making Trend easy for everyone.</h6><br>
+                <h1 style="padding: 20px;"></h1><br>
+                <p></p>
+                 
+
+
+            </div>
+            <div class="col-2">
+                <img src="img/ogbc.jpg">
+
+            </div>
+        </div>
+        <h2 style="padding: 25px;">We help people achieve independence by making it easier to start, run, and grow a business. We believe the future of commerce has more voices, not fewer, so we're reducing the barriers to business ownership to make commerce better for everyone.</h2>
 
      </div>
 </div>
+        </div>
 
 
 <!--------footer------->
@@ -81,6 +95,25 @@
     <hr>
     <p class="copyright">Copyright 2023 - Deepuraj</p>
 </div>
+<!--------js for toggle menu------->
+
+<script>
+    var MenuItems= document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+          {
+            MenuItems.style.maxHeight = "200px";
+          }
+        else
+           {
+            MenuItems.style.maxHeight = "0px";
+           }
+    }
+
+</script>
 
 </body>
 </html>
